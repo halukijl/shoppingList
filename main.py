@@ -18,7 +18,7 @@ while menuOption != '6':
     if menuOption == '1':
         print("Add item.")
     elif menuOption == '2':
-        print("Print list.")
+        print(mylist)
     elif menuOption == '3':
         print("Remove item by number.")
     elif menuOption == '4':
