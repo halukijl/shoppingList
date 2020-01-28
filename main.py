@@ -1,6 +1,6 @@
 menuOption = None
 
-mylist = []
+mylist = ["eggs","bread"]
 
 menuText = '''
 1.) Add item
@@ -18,7 +18,12 @@ while menuOption != '6':
     if menuOption == '1':
         print("Add item.")
     elif menuOption == '2':
-        print(mylist)
+        print('Print list')
+        mylist.sort(key=str.lower)
+        i = 1
+        for item in mylist:
+            print(str(i) + '.) ' + item)
+            i += 1
     elif menuOption == '3':
         print("Remove item by number.")
     elif menuOption == '4':
