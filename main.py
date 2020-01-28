@@ -19,7 +19,6 @@ while menuOption != '6':
         print("Add item.")
         item = input("What item would you like to add:  ")
         mylist.append(item)
-        print (mylist)
     elif menuOption == '2':
         print('Print list')
         mylist.sort(key=str.lower)
@@ -34,7 +33,7 @@ while menuOption != '6':
         try:
             number = int(number)
             myListTemp = []
-            removedItem = mylistmylist[number-1]
+            removedItem = mylist[number-1]
             for item in mylist:
                 if item != removedItem:
                     myListTemp.append(item)
